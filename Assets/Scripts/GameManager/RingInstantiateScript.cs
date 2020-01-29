@@ -6,6 +6,7 @@ public class RingInstantiateScript : MonoBehaviour
 {
     public float ringSpeed;
     public bool instantiateFlag;
+    private int currentLevel;
 
     public List<GameObject> arrayLevel_0;
     public List<GameObject> arrayLevel_1;
@@ -15,6 +16,8 @@ public class RingInstantiateScript : MonoBehaviour
     private GameObject currentInstance;
 
     public Metronome metronomeScript;
+
+    public GameManagerVariables manager;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +39,8 @@ public class RingInstantiateScript : MonoBehaviour
         
         if(instantiateFlag){
             //Level selector
-            GameObject tempObject = PickFromLevel(0);
+            currentLevel = switchLevel(metronomeScript.beatsSoFar);
+            GameObject tempObject = PickFromLevel(currentLevel);
             
             //instantiating tempObject
             currentInstance = GameObject.Instantiate(tempObject,Vector3.zero,Quaternion.identity);
@@ -54,6 +58,14 @@ public class RingInstantiateScript : MonoBehaviour
                 {
                     //Picker Logic
                     return arrayLevel_0[Random.Range(0,arrayLevel_0.Count)];
+                }
+            case 1:
+                {
+                    return arrayLevel_1[Random.Range(0,arrayLevel_1.Count)];
+                }
+            case 2:
+                {
+                    return arrayLevel_2[Random.Range(0,arrayLevel_2.Count)];
                 }
             default:
                 return ringTest;
@@ -74,6 +86,20 @@ public class RingInstantiateScript : MonoBehaviour
         }
 
         return returnArray;
+    }
+
+    public int switchLevel(int beats) {
+        int level;
+
+        // level up logic.
+        if (beats > 50) {
+            level = 2;
+        }else if (beats > 25) {
+            level = 1;
+        }else { 
+            level = 0;
+        }
+        return level;
     }
 
 

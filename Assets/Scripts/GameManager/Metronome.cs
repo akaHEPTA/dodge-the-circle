@@ -9,6 +9,7 @@ public class Metronome : MonoBehaviour
     public AudioClip playingSong;
     public float songBPM;
     public float beatInterval;
+    public int beatsSoFar;
 
     public bool beat;
     public bool halfBeat;
@@ -32,6 +33,7 @@ public class Metronome : MonoBehaviour
     void CheckForBeat(){
         if(timerCounter % beatInterval == 0){
             beat = true;
+            beatsSoFar++;
             // Debug.Log("Beat");
         }else if(timerCounter % (beatInterval/2) == 0){
             halfBeat = true;
