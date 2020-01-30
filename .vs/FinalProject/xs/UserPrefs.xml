@@ -1,10 +1,5 @@
 ﻿<Properties StartupConfiguration="{E1456745-ED92-4EB6-8905-E64DC1E47277}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager/Timer.cs">
-    <Files>
-      <File FileName="Assets/Scripts/StartScene/TextFade.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/StartScene/SceneManagement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager/Timer.cs" Line="39" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -13,11 +8,11 @@
               <Node name="Scripts" expanded="True">
                 <Node name="Camera" expanded="True" />
                 <Node name="EndGame" expanded="True" />
-                <Node name="GameManager" expanded="True">
-                  <Node name="Timer.cs" selected="True" />
-                </Node>
+                <Node name="GameManager" expanded="True" />
                 <Node name="Player" expanded="True" />
-                <Node name="Rings" expanded="True" />
+                <Node name="Rings" expanded="True">
+                  <Node name="TimedScaleScript.cs" selected="True" />
+                </Node>
                 <Node name="StartScene" expanded="True" />
               </Node>
             </Node>
@@ -28,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="56bb6ea5-e630-445e-bb34-bf961f1ced9f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fd6eb164-d752-4337-a3a8-8ddbeaeee0fc" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
