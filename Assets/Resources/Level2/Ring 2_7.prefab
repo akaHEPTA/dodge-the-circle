@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 6053633228680405081}
   - component: {fileID: 6537668177812150914}
   m_Layer: 0
-  m_Name: Ring 1_3
+  m_Name: Ring 2_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomInitial: 1
-  rotationSpeed: 0
+  rotationSpeed: 80
 --- !u!1 &7342520204632167908
 GameObject:
   m_ObjectHideFlags: 0

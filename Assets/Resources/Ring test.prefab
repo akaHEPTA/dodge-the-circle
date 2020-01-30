@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3051276550472628705}
   - component: {fileID: 3051276550472628704}
+  - component: {fileID: 1007746961098855639}
   m_Layer: 0
   m_Name: Ring test
   m_TagString: Untagged
@@ -50,7 +51,22 @@ MonoBehaviour:
   scaleSpeed: 0.5
   maxSize: 3
   initialScale: {x: 0.01, y: 0.01, z: 1}
-  gameManagerScript: {fileID: 0}
+  ringInstantiateScript: {fileID: 0}
+  gameManagerVariables: {fileID: 0}
+--- !u!114 &1007746961098855639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051276550472628706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b087bf27074adbe4fb335d1303d2d3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomInitial: 1
+  rotationSpeed: 80
 --- !u!1001 &3051276549630565933
 PrefabInstance:
   m_ObjectHideFlags: 0

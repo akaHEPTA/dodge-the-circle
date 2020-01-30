@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b087bf27074adbe4fb335d1303d2d3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  randomInitial: 0
+  randomInitial: 1
   rotationSpeed: 0
 --- !u!1 &4273513209701171284
 GameObject:
