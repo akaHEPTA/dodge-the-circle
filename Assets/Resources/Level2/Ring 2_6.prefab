@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4299793187330334184}
   - component: {fileID: 8039321914491337429}
+  - component: {fileID: 9143480232159670893}
   m_Layer: 0
   m_Name: BG
-  m_TagString: Untagged
+  m_TagString: ringPassed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +81,31 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &9143480232159670893
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5496702260061964617}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.3502514, y: -0.049916234}
+  - {x: -2.180468, y: -0.9124403}
+  - {x: -1.6716797, y: -1.6505789}
+  - {x: -0.95125896, y: -2.172284}
+  - {x: 0.011079404, y: -2.383501}
+  - {x: 0.8682111, y: -2.222489}
+  - {x: 1.5734144, y: -1.7527839}
+  - {x: 2.1883466, y: -0.96919894}
+  - {x: 2.36273, y: -0.049916234}
 --- !u!1 &6053633228680405083
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,9 +117,10 @@ GameObject:
   - component: {fileID: 6053633228680405080}
   - component: {fileID: 6053633228680405081}
   - component: {fileID: 62885606349415480}
+  - component: {fileID: 7667044231799619527}
   m_Layer: 0
   m_Name: Ring 2_6
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20371c773eb58a4aba7e333df2cdac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleSpeed: 0.5
+  scaleSpeed: 0.3
   maxSize: 3
   initialScale: {x: 0.01, y: 0.01, z: 1}
   ringInstantiateScript: {fileID: 0}
@@ -144,7 +171,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomInitial: 1
-  rotationSpeed: 80
+  rotationSpeed: 75
+  rotationDirection: 0
+--- !u!68 &7667044231799619527
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6053633228680405083}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.8314824, y: 0.3650126}
+  - {x: -4.4313517, y: 1.9856001}
+  - {x: -3.4842997, y: 3.452219}
+  - {x: -1.9660273, y: 4.4514627}
+  - {x: 0.020463705, y: 4.803284}
+  - {x: 2.4304883, y: 4.2030134}
+  - {x: 3.765517, y: 3.050694}
+  - {x: 4.516823, y: 1.8768383}
+  - {x: 4.88015, y: 0.2920102}
+  - {x: 4.8071475, y: 0.34067845}
 --- !u!1 &7342520204632167908
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +210,7 @@ GameObject:
   - component: {fileID: 3968952414982769218}
   m_Layer: 0
   m_Name: 45 to -75
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

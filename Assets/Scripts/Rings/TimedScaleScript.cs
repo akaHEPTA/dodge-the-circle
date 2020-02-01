@@ -26,7 +26,7 @@ public class TimedScaleScript : MonoBehaviour
         scaleSpeed = ringInstantiateScript.ringSpeed;
         this.transform.localScale = this.transform.localScale + new Vector3(scaleSpeed * Time.deltaTime, scaleSpeed * Time.deltaTime, 0);
 
-        if(this.transform.localScale.x > maxSize){
+        if(this.transform.localScale.x > 1){
             Destroy(gameObject);
         }
     }

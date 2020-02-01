@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7406719517196299584}
   m_Layer: 0
   m_Name: -90 to -135
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 564009092554028255}
   m_Layer: 0
   m_Name: 90 to 45
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 4695586494861198486}
   m_Layer: 0
   m_Name: 0 to -45
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,10 @@ GameObject:
   - component: {fileID: 2466931777396534924}
   - component: {fileID: 2466931777396534925}
   - component: {fileID: -4656826415756585706}
+  - component: {fileID: 3817205482101810862}
+  - component: {fileID: 8492577685316522666}
+  - component: {fileID: 6155215585742759090}
+  - component: {fileID: 5751454797977466574}
   m_Layer: 0
   m_Name: Ring 2_3
   m_TagString: RingAsset
@@ -148,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20371c773eb58a4aba7e333df2cdac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleSpeed: 0.5
+  scaleSpeed: 0.3
   maxSize: 3
   initialScale: {x: 0.01, y: 0.01, z: 1}
   ringInstantiateScript: {fileID: 0}
@@ -166,7 +170,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomInitial: 1
-  rotationSpeed: 80
+  rotationSpeed: 75
+  rotationDirection: 0
+--- !u!68 &3817205482101810862
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466931777396534927}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.8428054, y: 0.28619212}
+  - {x: -4.559522, y: 1.7001457}
+  - {x: -3.5930457, y: 3.281811}
+--- !u!68 &8492577685316522666
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466931777396534927}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.23271716, y: 4.8542523}
+  - {x: 2.0242195, y: 4.437023}
+  - {x: 3.2782202, y: 3.5872622}
+--- !u!68 &6155215585742759090
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466931777396534927}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 3.6567473, y: -3.2546968}
+  - {x: 4.4842324, y: -1.7943709}
+  - {x: 4.8761654, y: -0.23160768}
+--- !u!68 &5751454797977466574
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2466931777396534927}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -3.3219366, y: -3.5793765}
+  - {x: -1.9574271, y: -4.4552646}
+  - {x: -0.2437238, y: -4.8669167}
 --- !u!1 &3004881501470787284
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +259,7 @@ GameObject:
   - component: {fileID: 1017618862135849190}
   m_Layer: 0
   m_Name: 180 to 135
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,9 +291,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1754244775741785116}
   - component: {fileID: 8901435377245501769}
+  - component: {fileID: 5876970948512307954}
+  - component: {fileID: 3181691630868015494}
+  - component: {fileID: 4936214402878633432}
+  - component: {fileID: 2279710153952074091}
   m_Layer: 0
   m_Name: BG
-  m_TagString: Untagged
+  m_TagString: ringPassed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -280,6 +365,83 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &5876970948512307954
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979199507745957630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -2.338771, y: -0.06201127}
+  - {x: -2.185538, y: -0.89224213}
+  - {x: -1.7043585, y: -1.6618998}
+--- !u!68 &3181691630868015494
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979199507745957630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.009932672, y: 2.3531318}
+  - {x: -0.9204526, y: 2.1863332}
+  - {x: -1.6209272, y: 1.6816139}
+  - {x: -1.6449513, y: 1.6816138}
+--- !u!68 &4936214402878633432
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979199507745957630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.678194, y: 1.6447494}
+  - {x: 2.1637013, y: 0.9759578}
+  - {x: 2.3540945, y: 0.039792307}
+--- !u!68 &2279710153952074091
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979199507745957630}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.046708524, y: -2.3742754}
+  - {x: 0.9353713, y: -2.1752045}
+  - {x: 1.6378328, y: -1.6845417}
 --- !u!1001 &713373752567011894
 PrefabInstance:
   m_ObjectHideFlags: 0

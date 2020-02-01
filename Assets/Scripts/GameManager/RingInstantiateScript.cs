@@ -17,6 +17,8 @@ public class RingInstantiateScript : MonoBehaviour
 
     public Metronome metronomeScript;
 
+    public Score score;
+
     public GameManagerVariables manager;
 
     // Start is called before the first frame update

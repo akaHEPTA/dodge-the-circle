@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8551405118589538249}
   - component: {fileID: 5786081616804769384}
-  - component: {fileID: 1723083787149978901}
   m_Layer: 0
   m_Name: New Sprite
-  m_TagString: Ring
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,47 +80,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &1723083787149978901
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 417722123860931867}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.15, y: 0.4}
-    newSize: {x: 1.15, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.16344762, y: 0.14464225}
-      - {x: 0.007298354, y: 0.16847785}
-      - {x: -0.06653737, y: 0.1769408}
-      - {x: -0.4934929, y: 0.19692522}
-      - {x: -0.5611643, y: 0.14386646}
-      - {x: -0.5734626, y: 0.073775366}
-      - {x: -0.5311643, y: -0.033089545}
-      - {x: -0.4580897, y: -0.06001475}
-      - {x: 0.0188659, y: -0.10386586}
-      - {x: 0.04653724, y: -0.108477965}
-      - {x: 0.13285275, y: -0.12159762}
-      - {x: 0.34500813, y: -0.15853532}
-      - {x: 0.51271677, y: -0.20153733}
-      - {x: 0.5396423, y: -0.0884628}
-      - {x: 0.57961196, y: 0.043105066}
-      - {x: 0.54040325, y: 0.060791206}
 --- !u!1 &2481516508555519550
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +91,7 @@ GameObject:
   - component: {fileID: 4129054016998440320}
   m_Layer: 0
   m_Name: SectionAnti
-  m_TagString: Untagged
+  m_TagString: RingAsset
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

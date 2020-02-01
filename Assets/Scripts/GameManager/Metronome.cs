@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Metronome : MonoBehaviour
 {
+    public GameManagerVariables gameManager;
+
     public float timerCounter;
     public float timerTracker;
     public AudioClip playingSong;

@@ -5,48 +5,61 @@ using UnityEngine;
 public class CameraBehaviour : MonoBehaviour
 {
     
+    private bool cameraZoomIn;
+    private bool cameraZoomOut;
+    public int cameraZoomThreshold;
+    private int cameraZoomCounter;
+    public bool beatTick;
+
     private Camera cameraMain;
-    private float cameraMoveCounter;
-    public float cameraMoveThreshold;
-    public float cameraMaxX;
-    public float cameraMinX;
-    public float cameraMaxY;
-    public float cameraMinY;
-    public float cameraMaxZ;
-    public float cameraMinZ;
-    public float cameraMoveSpeed;
-    public bool cameraMoveInMotion;
-    public Vector3 cameraMoveTarget;
-    public GameObject player;
+    public float cameraMinFOV;
+    public float cameraMaxFOV;
+    public float cameraZoomSpeed;
+
+    private float cameraTiltCounter;
+    public float cameraTiltThreshold;
+    public float cameraTiltMaxX;
+    public float cameraTiltMinX;
+    public float cameraTiltMaxY;
+    public float cameraTiltMinY;
+    public float cameraTiltSpeed;
+    private bool cameraTiltInMotion;
+    private Vector3 cameraTiltTarget;
 
     // Start is called before the first frame update
     void Start()
     {
         cameraMain = this.GetComponentInParent<Camera>();
-        player = GameObject.Find("Player");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+        CameraZoomAndTilt();
+        
     }
 
     void FixedUpdate() 
     {
-        cameraMoveCounter++;
-        CameraMove();
+        cameraZoomCounter++;
+        cameraTiltCounter++;
     }
 
-    void CameraMove(){
-        if(cameraMoveCounter > cameraMoveThreshold && !cameraMoveInMotion){
-            cameraMoveInMotion = true;
-            cameraMoveTarget = new Vector3(Random.Range(cameraMinX, cameraMaxX),Random.Range(cameraMinX, cameraMaxX),Random.Range(cameraMinZ,cameraMaxZ));
+    void CameraZoomAndTilt(){
+        if(cameraTiltCounter > cameraTiltThreshold && !cameraTiltInMotion){
+            cameraTiltInMotion = true;
+            cameraTiltTarget = new Vector3(Random.Range(cameraTiltMinX, cameraTiltMaxX),Random.Range(cameraTiltMinX, cameraTiltMaxX),0);
         }
 
-        if(cameraMoveInMotion){
+        if(cameraTiltInMotion){
 
-            float diff = Vector3.Distance(cameraMain.transform.position, cameraMoveTarget);
-            cameraMain.transform.position += (cameraMoveTarget - cameraMain.transform.position).normalized * cameraMoveSpeed * Time.deltaTime;
-            cameraMain.transform.LookAt(player.transform.position);
+            float diff = Quaternion.Angle(cameraMain.transform.rotation, Quaternion.Euler(cameraTiltTarget));
+            cameraMain.transform.rotation = Quaternion.RotateTowards(cameraMain.transform.rotation, Quaternion.Euler(cameraTiltTarget),cameraTiltSpeed);
 
             if(Mathf.Abs(diff) < 2f){
-                cameraMoveInMotion = false;
-                cameraMoveCounter = 0;
+                cameraTiltInMotion = false;
+                cameraTiltCounter = 0;
             }
         }
 

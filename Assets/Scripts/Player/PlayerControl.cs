@@ -38,12 +38,12 @@ public class PlayerControl : MonoBehaviour
         //// for debug
         //if (Input.GetMouseButton(0))
         //{
-        //    transform.Rotate(Vector3.forward * rotateSpeed);
+        //    transform.Rotate(Vector3.forward * speed);
         //}
 
         //if (Input.GetMouseButton(1))
         //{
-        //    transform.Rotate(Vector3.back * rotateSpeed);
+        //    transform.Rotate(Vector3.back * speed);
         //}
 
     }
